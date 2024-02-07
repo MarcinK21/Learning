@@ -41,7 +41,7 @@
 * Funckja accuracy, funkcja roc, kompromis bias-variance trade-off
 * Walidacja krzyżowa (Cross validation)
 
-## 8. Klasyfikatory złożone - 
+## 8. Klasyfikatory złożone 
 * Dostrajanie lasu losowego
 * Las losowy (Random Forest)
 * Przykład na zbiorze germancredit

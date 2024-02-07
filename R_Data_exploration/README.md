@@ -36,3 +36,19 @@
 * Funckja rpart
 * Indeks Gini vs zysk informacyjny
 * Dostrajanie drzewa
+
+## 7. Ewaluacja i wydajność modelu
+* Funckja accuracy, funkcja roc, kompromis bias-variance trade-off
+* Walidacja krzyżowa (Cross validation)
+
+## 8. Klasyfikatory złożone - 
+* Dostrajanie lasu losowego
+* Las losowy (Random Forest)
+* Przykład na zbiorze germancredit
+
+## 9. Sieć neuronowa
+* Funckja normalizacji oraz błędu
+* Przykład na zbiorze "beton"
+* Przykład na zbiorze "germancredit"
+* Przykład na zbiorze "Google_Trends"
+* Przykład na zbiorze "SpaceShuttle"

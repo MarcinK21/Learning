@@ -1,6 +1,4 @@
 # Repozytorium zawiera proces uczenia się języka R
-## Pakiety z jakich korzystałem:
-
 
 ## 1. Podstawowe operacje w języku R
 * Wektory, macierze, factor

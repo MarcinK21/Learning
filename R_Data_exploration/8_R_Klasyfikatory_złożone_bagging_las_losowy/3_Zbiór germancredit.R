@@ -1,0 +1,27 @@
+#gc<-read.csv("germancredit.csv", stringsAsFactors = T)
+gc<-read.csv("http://imul.math.uni.lodz.pl/~bartkiew/med/dane/germancredit.csv", stringsAsFactors = T)
+summary(gc)
+gc$credit_risk <- factor(gc$credit_risk, levels = c(0, 1))
+levels(gc$credit_risk)<-c("nie","tak")
+
+library(caTools)
+set.seed(12345)
+split = sample.split(gc$credit_risk, SplitRatio = 0.7)
+gc.Train <- subset(gc, split == TRUE)
+gc.Test <- subset(gc, split == FALSE)
+summary(gc.Test)
+
+prop.table(table(gc$credit_risk))
+prop.table(table(gc.Train$credit_risk))
+prop.table(table(gc.Test$credit_risk))
+# Model drzewa rpart
+library(rpart)
+gc.rpart <- rpart(credit_risk~., gc.Train)
+library(rattle)
+fancyRpartPlot(gc.rpart)
+plot(gc.rpart)
+gc.pred.rpart <- predict(gc.rpart,newdata = gc.Test,type="class")
+table(gc.pred.rpart,gc.Test$credit_risk)
+acc.rpart=acc(gc.pred.rpart, gc.Test$credit_risk)
+acc.rpart
+roc.function(gc.pred.rpart, gc.Test$credit_risk)

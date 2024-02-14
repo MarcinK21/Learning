@@ -4,6 +4,7 @@
 Celem projektu jest zastosowanie różnych technik przetwarzania danych i uczenia maszynowego do analizy zbioru danych medycznych dotyczących guzów piersi. Projekt ma na celu identyfikację cech charakterystycznych dla guzów łagodnych i złośliwych oraz budowę modeli predykcyjnych klasyfikujących guzy na podstawie dostępnych cech
 
 ## Dane:
+źródło: https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data
 
 Dane zawierają 569 wierszy i 11 kolumn (po usunięciu zbędnych kolumn)
 
